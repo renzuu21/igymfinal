@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/gym_background6">
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back_button"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="60dp"
+        android:padding="1dp" />
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/custom_edittext_background"
+        android:fontFamily="sans-serif"
+        android:hint="Name"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textColorHint="#353231" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#353231"
+        android:background="@drawable/custom_edittext_background"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="1dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="1dp">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="#353231" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#353231" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Height (cm)"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#353231"
+        android:background="@drawable/custom_edittext_background"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight (kg)"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#353231"
+        android:background="@drawable/custom_edittext_background"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="1dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupBodyType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp">
+
+        <RadioButton
+            android:id="@+id/radioEctomorph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ectomorph"
+            android:textColor="#353231" />
+
+        <RadioButton
+            android:id="@+id/radioMesomorph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mesomorph"
+            android:textColor="#121111" />
+
+        <RadioButton
+            android:id="@+id/radioEndomorph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endomorph"
+            android:textColor="#353231" />
+    </RadioGroup>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:backgroundTint="#DADADA">
+
+        <TextView
+            android:id="@+id/textViewBodyTypeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note:\n\nEctomorph: Slim and long, with difficulty gaining muscle.\n\nMesomorph: Naturally muscular and athletic.\n\nEndomorph: Higher body fat, gains weight easily."
+            android:textColor="#000000"
+            android:padding="9dp"
+            android:textStyle="" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonCalculateBMI"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#796767"
+        android:padding="10dp"
+        android:text="Confirm"
+        android:textColor="#FAEAE2" />
+</LinearLayout>
